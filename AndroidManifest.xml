@@ -3,8 +3,8 @@
       package="com.android.whale_alarm"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:icon="@drawable/whale_set" android:label="@string/app_name">
-        <activity android:name=".alarm"
+    <application android:icon="@drawable/whale_set" android:label="@string/app_name" >
+        <activity android:name=".alarm" 
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.DEFEAULT" />
             </intent-filter>
         </activity>
-		<receiver android:name="alarm_wakeup" android:process=":remote" />
+		<receiver android:name="alarm_wakeup" android:process=":remote"/>
 	
     </application>
     <uses-sdk android:minSdkVersion="5" />
-
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
 </manifest> 
